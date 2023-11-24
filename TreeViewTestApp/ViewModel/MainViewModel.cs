@@ -54,7 +54,7 @@ namespace TreeViewTestApp.ViewModel
 			{
 				var newItem = new TreeItem()
 				{
-					Name = "Item " + i.ToString(),
+					Name = "Condition " + i.ToString(),
 					Children = new ObservableCollection<TreeItem>()
 				};
 
