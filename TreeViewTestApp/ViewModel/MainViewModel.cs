@@ -11,6 +11,8 @@ namespace TreeViewTestApp.ViewModel
 		public ICommand ClearItemsCommand { get; set; }
 		public ObservableCollection<TreeItem> MyItems { get; set; }
 
+		private int itemNo;
+
 		private string name;
 		private bool isSelected;
 		public string Name
@@ -52,9 +54,10 @@ namespace TreeViewTestApp.ViewModel
 		{
 			for (int i = 0; i < 100; i++)
 			{
+				itemNo++;
 				var newItem = new TreeItem()
 				{
-					Name = "Condition " + i.ToString(),
+					Name = "Condition " + itemNo.ToString(),
 					Children = new ObservableCollection<TreeItem>()
 				};
 
@@ -64,6 +67,7 @@ namespace TreeViewTestApp.ViewModel
 
 		private void ClearItems()
 		{
+			itemNo = 0;
 			MyItems.Clear();
 		}
 

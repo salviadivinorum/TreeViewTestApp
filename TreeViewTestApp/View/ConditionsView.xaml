@@ -8,8 +8,7 @@
 	xmlns:model="clr-namespace:TreeViewTestApp.Model"
 	xmlns:vm="clr-namespace:TreeViewTestApp.ViewModel"
 	Title="Conditions"
-	Width="400"
-	Height="450"
+	WindowState="Maximized"	
 	d:DataContext="{d:DesignInstance vm:MainViewModel,
 	                                 IsDesignTimeCreatable=True}"
 	WindowStartupLocation="CenterScreen"
